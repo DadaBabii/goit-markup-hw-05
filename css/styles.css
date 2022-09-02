@@ -334,6 +334,35 @@ a {
     margin-bottom: var(--margin30);
 }
 
+.photo-overlay {
+    position: relative;
+    display: block;
+    
+    }
+
+.photo-item {
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--main-light-color);
+    padding: 27px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    overflow: auto;
+    z-index: 10;
+}
+
 
 
 .directions-section {
