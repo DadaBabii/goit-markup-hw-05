@@ -112,6 +112,7 @@ a {
 
 
 .nav .nav-list {
+    position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -128,6 +129,18 @@ a {
 .nav .nav-list:hover,
 .nav .nav-list:focus {
     color: var(--secondary-text-color);
+}
+
+.straich::after {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: var(--secondary-text-color);
+    border-radius: 2px;
 }
 
 
