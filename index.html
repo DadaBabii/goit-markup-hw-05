@@ -55,7 +55,7 @@
         <section class="advertis-section">
         <div class="container">
                 <h1 class="advertisement">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="button">Замовити послугу</button>
+                <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
         </section>
 
@@ -125,19 +125,25 @@
                     <li class="item">
                         <div class="photo-overlay">
                             <img class="photo-item" src="./images/box1.jpg" alt="друкування на клавіатурі" width="370" />
-                            <p class="text-overlay">Десктопні додатки</p>
+                            <div class="thumb-overlay">
+                            <p class="text-overlay" >Десктопні додатки</p>
+                            </div>
                         </div>
                     </li>
                     <li class="item">
                         <div class="photo-overlay">
                             <img class="photo-item" src="./images/box2.jpg" alt="розглядання гаджетів" width="370" />
+                            <div class="thumb-overlay">
                             <p class="text-overlay">Мобільні додатки</p>
+                            </div>
                     </div>
                 </li>
                     <li class="item">
                         <div class="photo-overlay">
                             <img class="photo-item" src="./images/box3.jpg" alt="лаптоп" width="370" />
-                    <p class="text-overlay">Дизайнерські рішення</p>
+                            <div class="thumb-overlay">
+                            <p class="text-overlay">Дизайнерські рішення</p>
+                            </div>
                     </div>
                     </li>
                 </ul>
@@ -478,7 +484,16 @@
 
     
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg aria-label="іконка закриття" class="modal-close-icon" width="11px" height="11px">
+                    <use href="./images/symbol-defs.svg#closex"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
